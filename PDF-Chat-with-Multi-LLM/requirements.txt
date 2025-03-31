@@ -4,4 +4,3 @@ huggingface_hub==0.14.0
 PyPDF2==2.11.2
 python-dotenv==0.21.1
 faiss-cpu==1.7.3
-streamlit-pdf-viewer
