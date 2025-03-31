@@ -8,23 +8,15 @@ from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain.embeddings import HuggingFaceEmbeddings
 from langchain.vectorstores import FAISS
 from langchain.chains import RetrievalQA
-from dotenv import load_dotenv
 from streamlit_pdf_viewer import pdf_viewer
-
-# Load environment variables
-load_dotenv(r"C:\Users\prade\OneDrive\Desktop\Agents\.env")
-os.environ["HUGGINGFACEHUB_API_TOKEN"] = os.getenv("Token")
-token = os.getenv("Token")
-if not token:
-    raise ValueError("HF_TOKEN is not set. Please configure it in your environment variables or a .env file.")
 
 # Ensure required libraries are installed
 os.system("pip install tabulate openpyxl")
 
 def init_page() -> None:
     st.set_page_config(page_title="PDF Chatbot")
-    st.subheader("💬 Chat with PDF with multiple LLMs")
-    st.write("Created by Pradeep Kumar")
+    st.subheader("💬 PDF Chat with multi LLMs")
+    # st.write("Created by Pradeep Kumar")
 
 def init_messages() -> None:
     if "messages" not in st.session_state:
@@ -45,6 +37,8 @@ def main() -> None:
     # Sidebar: LLM selection and PDF file uploader
     with st.sidebar:
         st.title("Options")
+        
+        token = st.text_input("HuggingFace Token")
         selected_model = st.selectbox(
             "Select LLM",
             options=[
