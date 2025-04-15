@@ -9,11 +9,9 @@ This project allows you to **upload a PDF**, select your favorite **Hugging Face
 ## 🖼️ Screenshot
 
 - ### UI
-> ![image](https://github.com/user-attachments/assets/d4701129-4c42-41e7-b3b3-923d29403404)
---
+> ![image](https://github.com/user-attachments/assets/d4701129-4c42-41e7-b3b3-923d29403404)   
 - ### after upload PDF
-> ![image](https://github.com/user-attachments/assets/b7559c43-8fde-49b8-8816-9a30f60ccb47)
---
+> ![image](https://github.com/user-attachments/assets/b7559c43-8fde-49b8-8816-9a30f60ccb47)   
 - ### Getting answer from PDF
 > ![image](https://github.com/user-attachments/assets/f3c4caea-e866-4954-8fb4-ca5f11330fae)
 
