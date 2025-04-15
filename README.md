@@ -20,7 +20,7 @@ A powerful chatbot that allows you to **upload a PDF and ask questions** directl
 - Embeds and retrieves data using FAISS.
 - Semantic search + contextual answers using RetrievalQA chain.
 
-📁 Project Path: [`/pdf-chatbot`](./pdf-chatbot)
+📁 Project Path: [`/pdf-chatbot`](./PDF-Chat-with-Multi-LLM)
 ---
 
 ## 🚧 Upcoming Projects
